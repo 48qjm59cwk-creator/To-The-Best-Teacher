@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>to the best teacher ✦</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div id="stars" class="stars"></div>
+    <div id="particles" class="particles"></div>
+    <div id="shooting-stars"></div>
+
+
+    <!-- =========================================
+         OPENING SCREEN
+    ========================================== -->
+
+    <div id="intro" class="intro">
+
+        <div class="intro-content">
+
+            <span class="eyebrow">
+                A small place in the universe
+            </span>
+
+            <h1>
+                I made a little
+                <br>
+                <em>universe</em> for you…
+            </h1>
+
+            <p>
+                For the memories, 
+                and everything still waiting to happen.
+            </p>
+
+            <button id="enterBtn" class="glow-button" onclick="startMusic()">
+                ✨ Enter
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="topbar">
+
+        <a href="#home" class="brand">
+           
+        </a>
+
+        <button id="musicToggle" class="music-toggle">
+            ♫ <span>Music</span>
+        </button>
+
+        <button id="menuToggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="nav">
+
+            <a href="#home">Home</a>
+            <a href="#memories">Memories</a>
+            <a href="#letter">Letter</a>
+            <a href="#song">Song</a>
+            <a href="#reasons">Reasons</a>
+            <a href="#surprise">Surprise</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================================
+             HOME
+        ========================================== -->
+
+        <section id="home" class="section hero">
+
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+
+            <div class="hero-content reveal">
+
+                <span class="eyebrow">
+                    A message written among the stars
+                </span>
+
+                <h2>
+                    Happy Birthday,
+                    <br>
+
+                    <span>Bawar</span>
+
+                    <b>♥</b>
+                </h2>
+
+                <p class="hero-message">
+
+                    Today isn’t just another day.
+                    It’s a reminder of how lucky I am
+                    to have you in my life.
+
+                </p>
+
+
+                <!-- Friendship counter -->
+
+                <div class="birthday-meta">
+
+                    <div>
+                        <strong id="ageYears">0</strong>
+                        <small>Years</small>
+                    </div>
+
+                    <i>·</i>
+
+                    <div>
+                        <strong id="ageMonths">0</strong>
+                        <small>Months</small>
+                    </div>
+
+                    <i>·</i>
+
+                    <div>
+                        <strong id="ageDays">0</strong>
+                        <small>Days</small>
+                    </div>
+
+                </div>
+
+
+                <p class="tiny-note">
+                    your age now.
+                </p>
+
+
+                <a href="#memories" class="scroll-cue">
+
+                    Scroll down
+
+                    <span>↓</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             MEMORIES
+        ========================================== -->
+
+        <section id="memories" class="section memories-section">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    Constellation of moments
+                </span>
+
+                <h2>
+                    Our <em>Memories</em>
+                </h2>
+
+                <p>
+                    A few little pieces of time
+                    that became part of our story.
+                </p>
+
+            </div>
+
+
+            <div class="memory-grid">
+
+
+                <!-- MEMORY 1 -->
+
+                <article
+                    class="memory-card reveal"
+                    style="--rotate:-4deg"
+                >
+
+                    <button
+                        class="photo-button"
+                        data-image="memory-1.jpg"
+                        data-caption="On That day it had been a year since we first met."
+                    >
+
+                       <img src="memory-1.jpg" alt="Memory 1">
+
+                    </button>
+
+                    <p>
+                        On That day it had been a year since we first met.
+                    </p>
+
+                </article>
+
+
+
+                <!-- MEMORY 2 -->
+
+                <article
+                    class="memory-card reveal"
+                    style="--rotate:3deg"
+                >
+
+                    <button
+                        class="photo-button"
+                        data-image="memory-2.jpg"
+                        data-caption="A normal day that ,We were busy buying books."
+                    >
+                        <img src="memory-2.JPG" alt="Memory 1">
+
+                    </button>
+
+                    <p>
+                        A normal day that ,We were busy buying books.
+                    </p>
+
+                </article>
+
+
+
+                <!-- MEMORY 3 -->
+
+                <article
+                    class="memory-card reveal"
+                    style="--rotate:-2deg"
+                >
+
+                    <button
+                        class="photo-button"
+                        data-image="memory-3.jpg"
+                        data-caption="One of those moments I wish I could pause forever."
+                    >
+
+                        <img src="memory-3.JPG" alt="Memory 1">
+
+                    </button>
+
+                    <p>
+                        One of those moments I wish
+                        I could pause forever.
+                    </p>
+
+                </article>
+
+
+
+                <!-- MEMORY 4 -->
+
+                <article
+                    class="memory-card reveal"
+                    style="--rotate:5deg"
+                >
+
+                    <button
+                        class="photo-button"
+                        data-image="memory-4.jpg"
+                        data-caption="Just a random day at mxayam."
+                    >
+
+                        <img src="memoty-4.JPG" alt="Memory 1">
+
+                    </button>
+
+                    <p>
+                        Just a random day at mxayam.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             LETTER
+        ========================================== -->
+
+        <section id="letter" class="section letter-section">
+
+            <div class="letter-wrap reveal">
+
+                <span class="eyebrow">
+                    From my corner of the universe
+                </span>
+
+                <h2>
+                    A Letter <em>For You</em>
+                </h2>
+
+
+                <div class="letter-card">
+
+                    <div class="letter-stars">
+                        ✦　·　✧　·　✦
+                    </div>
+
+                    <p id="letterText"></p>
+
+                    <span class="typing-cursor">
+                        |
+                    </span>
+
+                    <p class="signature">
+                        — your friend Alan
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SONG
+        ========================================== -->
+
+        <section id="song" class="section song-section">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    A soundtrack for you
+                </span>
+
+                <h2>
+                    your <em>music</em>
+                </h2>
+
+            </div>
+
+
+            <div class="song-card reveal">
+
+
+                <!-- Album artwork -->
+
+                <div class="album-art">
+
+                            <span class="artwork">
+    <img src="interstellar.jpg" alt="Song Cover">
+</span>
+
+                    <small>
+                       Interstellar
+                    </small>
+
+                </div>
+
+
+                <div class="song-info">
+
+                    <span class="song-kicker">
+                        your favorite music...
+                    </span>
+
+                    <h3>
+                        Interstellar main theme
+                    </h3>
+
+                    <p>
+                        Hans Zimmer
+                    </p>
+
+
+                    <!-- Visualizer -->
+
+                    <div
+                        id="visualizer"
+                        class="audio-visualizer"
+                    >
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+
+                    <!-- Progress -->
+
+                    <div class="progress-wrap">
+
+                        <input
+                            id="progress"
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="0"
+                        >
+
+                        <div class="time-row">
+
+                            <span id="currentTime">
+                                0:00
+                            </span>
+
+                            <span id="duration">
+                                0:00
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="player-controls">
+
+                        <button
+                            id="playBtn"
+                            class="play-button"
+                        >
+                            ▶
+                        </button>
+
+                        <label class="volume-control">
+
+                            Volume
+
+                            <input
+                                id="volume"
+                                type="range"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value="0.7"
+                            >
+
+                        </label>
+
+                    </div>
+
+
+                    <p class="tiny-note">
+
+                        <code></code>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <audio id="audio" loop>
+
+                <source
+                    src="Interstellar Main Theme - Hans Zimmer (1).mp3"
+                    type="audio/mpeg"
+                >
+
+            </audio>
+
+        </section>
+   <!-- =========================================
+             SONG2
+        ========================================== -->
+ <section id="song" class="section song-section">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    A Song for you
+                </span>
+
+                <h2>
+                    your <em>song</em>
+                </h2>
+
+            </div>
+
+
+            <div class="song-card reveal">
+
+
+                <!-- Album artwork -->
+
+                <div class="album-art">
+
+                    <span class="artwork">
+    <img src="ChatGPT Image.png" alt="Song Cover">
+</span>
+
+                    <small>
+                        
+                    </small>
+
+                </div>
+
+
+                <div class="song-info">
+
+                    <span class="song-kicker">
+                        your favorite Song...
+                    </span>
+
+                    <h3>
+                        Ahay Khabardar
+                    </h3>
+
+                    <p>
+                        Homayoun Shajarian
+                    </p>
+
+
+                    <!-- Visualizer -->
+
+                    <div
+                        id="visualizer"
+                        class="audio-visualizer"
+                    >
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+
+                    <!-- Progress -->
+
+                    <div class="progress-wrap">
+
+                        <input
+                            id="progress"
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="0"
+                        >
+
+                        <div class="time-row">
+
+                            <span id="currentTime">
+                                0:00
+                            </span>
+
+                            <span id="duration">
+                                0:00
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="player-controls">
+
+                        <button
+                            id="playBtn"
+                            class="play-button"
+                        >
+                            ▶
+                        </button>
+
+                        <label class="volume-control">
+
+                            Volume
+
+                            <input
+                                id="volume"
+                                type="range"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value="0.7"
+                            >
+
+                        </label>
+
+                    </div>
+
+
+                    <p class="tiny-note">
+
+                        <code></code>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <audio>
+
+                <source
+                    src="Homayoun Shajarian - Ahay Khabardar (Live) (1).mp3"
+                    type="audio/mpeg"
+                >
+
+            </audio>
+
+        </section>
+
+
+
+        <!-- =========================================
+             REASONS
+        ========================================== -->
+
+        <section id="reasons" class="section reasons-section">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+
+                </span>
+
+                <h2>
+                    to say 
+                    <em>I love you</em>
+                    is too small , instead we say:
+                </h2>
+
+            </div>
+
+
+            <div class="reasons-grid">
+
+
+                <article class="reason-card reveal">
+
+                    <span>01</span>
+
+                    <h3 class="kurdi">
+                       قانیع خورشید
+                    </h3>
+
+                    <p class="kurdi">
+                    نازانم تۆ بەبێ من چۆنی 
+                     وەلێ دەزانم من بەبێ تۆ ،
+                     جەستەیەکم بێ رۆح،
+                     تۆفانێکم بێ نوح،
+                     هەنگێکم بە بێ هەنگوین و،
+                     دڵێکم دوور لە ئەوین ،
+                     ڕێگەیەکم بەبێ مەودا،
+                     سەرێکم خاڵی لە سەودا،
+                     من بەبێ تۆ،
+                     بێ خۆمم،
+                    </p>
+
+                </article>
+
+
+
+                <article class="reason-card reveal">
+
+                    <span>02</span>
+
+                    <h3 class="kurdi">
+                        تەڵعەت تاهیر
+                    </h3>
+
+                    <p class="kurdi">
+                       خۆشم دەوێی وەک ئەوەی سبەی بمرم،
+                 ‌غەریبیت دەکەم وەک ئەوەی هەتا هەتایە بژیم،
+                 لەنێوان من و ژیاندا تۆ هەیت ،
+                 بۆیە ئێستا لەگەڵ دونیا 
+                 لەو ژن و مێردە دەچین لەبەر خاتری منداڵەکەیان ، جیانابنەوە!
+                    </p>
+
+                </article>
+
+
+
+                <article class="reason-card reveal">
+
+                    <span>03</span>
+
+                    <h3 class="kurdi">
+                        شێرکۆ بێکەس
+                    </h3>
+
+                    <p class="kurdi">
+                        تۆ بۆ من تەنها کەسێک نی،
+                        تۆ ئەو نیشتیمانەی کە کاتێک لێت دوردەکەومەوە،
+                        غەریبی دەبێتە تاقە هاوڕێم
+                    </p>
+
+                </article>
+            
+                <article class="reason-card reveal">
+
+                    <span>04</span>
+
+                    <h3 class="kurdi">
+                      حوسێن پەناهی  
+                    </h3>
+
+                    <p class="kurdi">
+                       من پێویستم بە وشەی خۆشمدەوێی نیە،
+                       کاتێک دەبینم بوونی تۆ لەناو قەراباڵغی ئەم دنیایەدا سەدای داوەتەوە 
+                    </p>
+
+                </article>
+
+
+
+                <article class="reason-card reveal">
+
+                    <span>05</span>
+
+                    <h3 class="kurdi">
+                        مەولانای ڕۆمی
+                    </h3>
+
+                    <p class="kurdi">
+                        تۆ بۆمن تەنها کەسێک نییت؛
+                        تۆ ئەو هەناسەیەی کە ئەگەر ببڕێیت ، منیش لەم دنیایەدا بوونم نامێنێت
+                    </p>
+
+                </article>
+
+
+
+                <article class="reason-card reveal">
+
+                    <span>06</span>
+
+                    <h3 class="kurdi">
+                       مەحوی 
+                    </h3>
+
+                    <p class="kurdi">
+                      من بەتۆوە زیندوم و بەتۆوە ڕوناکم غەیری خەمەکانت، هیچ میوانێکی ترم لە دڵدا نییە 
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FINAL SURPRISE
+        ========================================== -->
+
+        <section id="surprise" class="section surprise-section">
+
+            <div class="surprise-content reveal">
+
+                <span class="eyebrow">
+                    The final little secret
+                </span>
+
+                <h2>
+                    One last <em>thing…</em>
+                </h2>
+
+
+                <button
+                    id="giftBtn"
+                    class="gift-button"
+                >
+
+                    <span class="gift-lid"></span>
+
+                    <span class="gift-box"></span>
+
+                    <span class="gift-ribbon"></span>
+
+                </button>
+
+
+                <p id="openText" class="open-text">
+                    Open it.
+                </p>
+
+
+                <div
+                    id="finalMessage"
+                    class="final-message"
+                >
+
+                    <div class="final-star">
+                        ✦
+                    </div>
+
+                    <p>
+
+                        Wherever life takes us,
+
+                    I hope a part of us always stays here—
+
+                    in the memories,
+
+                    and the dreams we once shared together.
+
+
+                    </p>
+
+                    <h3>
+                        Happy Birthday, M.Bawar. ❤️
+                    </h3>
+
+                    <p>
+                        I'm really grateful that you're
+                        part of my story.
+                    </p>
+
+                    <span class="final-signature">
+                        Always, your best friend.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         PHOTO LIGHTBOX
+    ========================================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+    >
+
+        <button
+            id="closeLightbox"
+            class="close-lightbox"
+        >
+            ×
+        </button>
+
+        <div class="lightbox-inner">
+
+            <img
+                id="lightboxImg"
+                src=""
+                alt="Memory"
+            >
+
+            <div
+                id="lightboxFallback"
+                class="lightbox-fallback"
+            >
+                Memory photo
+            </div>
+
+            <p id="lightboxCaption"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CONFETTI -->
+
+    <div id="confetti"></div>
+
+
+
+    <footer>
+
+         ✦
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
