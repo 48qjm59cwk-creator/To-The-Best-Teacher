@@ -1082,11 +1082,11 @@ nav a:hover {
 
 
 .letter-card p {
+  white-space: pre-line;
+    
+    font-family: "kurdish", sans-serif;
 
-    font-family:
-        "Cormorant Garamond";
-
-    font-size: 1.35rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 
@@ -1101,7 +1101,7 @@ nav a:hover {
 
     animation:
         blink
-        0.8s
+        2s
         steps(1)
         infinite;
 

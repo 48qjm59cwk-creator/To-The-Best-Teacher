@@ -27,12 +27,12 @@ const FRIENDSHIP_DATE = "1997-10-21";
     when the visitor reaches the Letter section.
 */
 
-const LETTER_MESSAGE = `Dear Teacher Bawar,
-I cannot express the deep feelings I have for you with just a few superficial sentences, because to me, you are not just a teacher who delivers a lesson; you are the person who changed my concept of life and understanding. you taught me how to think deeply, how not to be afraid of obstacles, and how to be authentic in my steps.
-Your presence in my life is like a lamp illuminating my path. Every piece of advice from you, every serious word or lighthearted joke between us, has been a turning point in how I view my surroundings. Thank you so much for all the times you listened to me with patience, and for those honest pieces of advice which, although sometimes difficult, always led me to become better.
-I am proud that you were my "teacher" in the classroom and my "closest friend" outside of it. I hope you always remain as energetic and full of hope, and know that your presence in my life is the greatest support and blessing I have.
-Always with immense respect and love,
-Alan`;
+const LETTER_MESSAGE = `مامۆستا باوەڕ گیان،
+ناتوانم بە چەند ڕستەیەکی ڕوکەش ئەو هەستە قووڵە دەرببڕم کە بۆت هەیە، چونکە تۆ لای من تەنها مامۆستایەک نییت کە وانەیەکم پێ بڵێیتەوە؛ تۆ ئەو مرۆڤەی کە چەمکی ژیان و تێگەیشتنت بۆ گۆڕیم. تۆ فێرت کردم چۆن بە قوڵی بیر بکەمەوە، چۆن لە بەربەستەکان نەتۆقەم، و چۆن لە هەنگاوەکانمدا ڕاستەقینە بم.
+بوونی تۆ لە ژیانمدا وەک چرایەکە ڕێگاکەم ڕووناک دەکاتەوە. هەر ڕێنماییەکی تۆ، هەر قسەیەکی جدی یان گاڵتەیەکی نێوانمان، خاڵی وەرچەرخان بووە لەوەی چۆن سەیری دەوروبەرم بکەم. زۆر سوپاس بۆ هەموو ئەو کاتانەی بە پشوودرێژییەوە گوێت بۆ گرتووم، بۆ ئەو ئامۆژگارییە ڕاستگۆیانەی کە هەرچەندە جاروبار قورسیش بوون، بەڵام هەمیشە بەرەو باشترت بردووم.
+شانازی بەوە دەکەم کە لە دەرسدا «مامۆستام» بوویت و لە دەرەوەش «نزیكترین هاوڕێم»ی. هیوادارم بزانی بوونت لە ژیانمدا گەورەترین پشتیوان و نعمەتە کە هەمە.
+بە ڕێز و خۆشەویستێکی زۆرەوە،
+`;
 
 
 
@@ -835,8 +835,68 @@ audio.addEventListener(
 
     }
 );
+// second song
+const audio2 = document.getElementById("audio2");
+const playBtn2 = document.getElementById("playBtn2");
+const progress2 = document.getElementById("progress2");
+const volume2 = document.getElementById("volume2");
+const currentTime2 = document.getElementById("currentTime2");
+const duration2 = document.getElementById("duration2");
 
+// Play and pause
+playBtn2.addEventListener("click", function () {
+    if (audio2.paused) {
+        audio2.play();
+        playBtn2.textContent = "❚❚";
+    } else {
+        audio2.pause();
+        playBtn2.textContent = "▶";
+    }
+});
 
+// Volume
+volume2.addEventListener("input", function () {
+    audio2.volume = volume2.value;
+});
+
+// Update progress bar
+audio2.addEventListener("timeupdate", function () {
+    if (audio2.duration) {
+        progress2.value = (audio2.currentTime / audio2.duration) * 100;
+
+        let minutes = Math.floor(audio2.currentTime / 60);
+        let seconds = Math.floor(audio2.currentTime % 60);
+
+        currentTime2.textContent =
+            minutes + ":" + String(seconds).padStart(2, "0");
+    }
+});
+
+// Change song position
+progress2.addEventListener("input", function () {
+    if (audio2.duration) {
+        audio2.currentTime = (progress2.value / 100) * audio2.duration;
+    }
+});
+const audio1 = document.getElementById("audio");
+// Show song duration
+audio2.addEventListener("loadedmetadata", function () {
+    let minutes = Math.floor(audio2.duration / 60);
+    let seconds = Math.floor(audio2.duration % 60);
+
+    duration2.textContent =
+        minutes + ":" + String(seconds).padStart(2, "0");
+});
+
+audio1.addEventListener("play", function () {
+    audio2.pause();
+});
+
+audio2.addEventListener("play", function () {
+    audio1.pause();
+});
+// Set initial volume
+audio2.volume = 0.7;
 
 function formatTime(seconds) {
 
