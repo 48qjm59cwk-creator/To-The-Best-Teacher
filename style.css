@@ -11,12 +11,16 @@
     font-family: "kurdish";
     src: url("kurdish.ttf") format("truetype");
 }
+@font-face {
+    font-family: "kurdishf";
+    src: url("kurdishf.ttf") format("truetype");
+}
 
 .kurdi {
     font-family: "kurdish", sans-serif;
 }
-h3.kurdi {
-    font-family: "kurdish", sans-serif;
+h3.kurdif {
+    font-family: kurdishf !important;
 }
 :root {
 
@@ -1110,7 +1114,7 @@ nav a:hover {
 
 .signature {
 
-    font-family: Parisienne !important;
+    font-family: kurdishf !important;
 
     color: #d9bda2 !important;
 
